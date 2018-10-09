@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="GYROSCOPE"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvXAxis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="x-axis: "
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/tvXValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvXAxis"
+        app:layout_constraintStart_toEndOf="@+id/tvXAxis"
+        app:layout_constraintTop_toTopOf="@+id/tvXAxis"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tvYAxis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="y-axis: "
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/tvXValue"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvXAxis"
+        app:layout_constraintTop_toBottomOf="@+id/tvXAxis" />
+
+    <TextView
+        android:id="@+id/tvYValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvYAxis"
+        app:layout_constraintStart_toEndOf="@+id/tvYAxis"
+        app:layout_constraintTop_toTopOf="@+id/tvYAxis"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tvZAxis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="z-axis: "
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/tvYValue"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvYAxis"
+        app:layout_constraintTop_toBottomOf="@+id/tvYAxis" />
+
+    <TextView
+        android:id="@+id/tvZValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="TextView"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvZAxis"
+        app:layout_constraintStart_toEndOf="@+id/tvZAxis"
+        app:layout_constraintTop_toTopOf="@+id/tvZAxis"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="ACCELEROMETER"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.72"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvXAxisA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="x-axis: "
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/tvXValueA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvXAxisA"
+        app:layout_constraintStart_toEndOf="@+id/tvXAxisA"
+        app:layout_constraintTop_toTopOf="@+id/tvXAxisA" />
+
+    <TextView
+        android:id="@+id/tvYAxisA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="y-axis: "
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tvXAxisA"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvXAxisA"
+        app:layout_constraintTop_toBottomOf="@+id/tvXAxisA" />
+
+    <TextView
+        android:id="@+id/tvYValueA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvZAxisA"
+        app:layout_constraintStart_toEndOf="@+id/tvYAxisA"
+        app:layout_constraintTop_toTopOf="@+id/tvYAxisA"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvZAxisA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="z-axis: "
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tvYAxisA"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvYAxisA"
+        app:layout_constraintTop_toBottomOf="@+id/tvYAxisA" />
+
+    <TextView
+        android:id="@+id/tvZValueA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvZAxisA"
+        app:layout_constraintStart_toEndOf="@+id/tvZAxisA"
+        app:layout_constraintTop_toTopOf="@+id/tvZAxisA"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/zLL"
+        android:layout_width="match_parent"
+        android:layout_height="520dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvZAxisA"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/intLvlTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Intensity Level"
+            android:textColor="@android:color/white"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="156dp"
+            tools:layout_editor_absoluteY="40dp" />
+
+        <TextView
+            android:id="@+id/intLvlNumTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="10"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="300sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
